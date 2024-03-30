@@ -1,0 +1,63 @@
+### Change password
+PUT localhost:8080/profile/changePassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg1MDI1MjQsImVtYWlsIjoic2hhbXNob2Q2Njk2b2RpbmF5ZXZAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfVVNFUiIsImV4cCI6MTcwODU4ODkyNCwiaXNzIjoiWW91dHViZSJ9.kVF0Ydtlw6YMJKiV8xdgJxs_V7GKvUoT9GesUEVnTsdT9juJmLQqwdQGMm-Pwxmwt12Lh-Ouk7XFfahxx5SqsA
+Accept-Language: UZ
+
+{
+  "oldPassword": "123456",
+  "newPassword": "1111",
+  "newPasswordConfirm": "1111"
+}
+
+### Update email
+PUT localhost:8080/profile/updateEmail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg2MDAxMTMsImVtYWlsIjoic2hhbXNob2RvZGluYXlldjE3MDJAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfVVNFUiIsImV4cCI6MTcwODY4NjUxMywiaXNzIjoiWW91dHViZSJ9.6U9GLhKUmVnCqB03j2hFZxyhsilPvlQ9sahxrjNYGdvebnjwWfFAP1IVXD4dmzIxDWK_5jmEt7FmGy6Xa9QOsQ
+Accept-Language: UZ
+
+{
+  "email": "shamshod6696odinayev@gmail.com"
+}
+
+### Verification
+GET localhost:8080/profile/verification/email/eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg1OTc4NDQsImlkIjoxMCwiZXhwIjoxNzA4NjAxNDQ0LCJpc3MiOiJZb3V0dWJlIn0.pkf8v_pRp-PkWJGa8Sc3b7xoC59rqMQoMT-dQOqteiG3liFYDR6q_IJQxdLpUrlDi6xPvMakjUtYc532sX5Idw
+
+### Update name and surname
+PUT localhost:8080/profile/changeNameAndSurname
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg1MTA2NjcsImVtYWlsIjoiYXNsYmVrbm9ycXVsb3YyNDZAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfVVNFUiIsImV4cCI6MTcwODU5NzA2NywiaXNzIjoiWW91dHViZSJ9.vhWxXfxfCmxH4G-c9lfMskKVbLeuj08a3j7jwJirFvKmUo9kaKQNCXxiIUv1kuvRk-J4FDhF7Yrw4pWgJPFtOw
+Accept-Language: UZ
+
+{
+  "name": "Aslbek",
+  "surname": "Norqulov"
+}
+
+### create profile admin
+POST localhost:8080/profile/adm/createProfile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg2OTU0NzQsImVtYWlsIjoiYWRtaW5qb25AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDg3ODE4NzQsImlzcyI6IllvdXR1YmUifQ.zUOfhYp49BL0z43kIBiU6Y2Q0rRR7VJ5Y7NKZgximx5j8xuFs5Bnj5B-9qPXXLT2oT563m7-nPjEaxncC8lehg
+
+{
+  "name": "rajab",
+  "surname": "ollanazarov",
+  "email": "rajabbekollanazarov12@gmail.com",
+  "password": "123",
+  "profileRole": "ROLE_MODERATOR",
+  "photo": "eb02a020-62a2-42ce-865d-9da3f9855b86"
+}
+
+### get profile
+GET localhost:8080/profile/getProfile
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg2OTU0NzQsImVtYWlsIjoiYWRtaW5qb25AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDg3ODE4NzQsImlzcyI6IllvdXR1YmUifQ.zUOfhYp49BL0z43kIBiU6Y2Q0rRR7VJ5Y7NKZgximx5j8xuFs5Bnj5B-9qPXXLT2oT563m7-nPjEaxncC8lehg
+Accept-Language: UZ
+
+### Update photo
+PUT localhost:8080/profile/updatePhoto/2f7fe3f8-1f3d-4a54-b4bd-5a083aa143c2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3ODY2MTQsImVtYWlsIjoibW9kZXJhdG9yam9uQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX01PREVSQVRPUiIsImV4cCI6MTcwODg3MzAxNCwiaXNzIjoiWW91dHViZSJ9.eGtc_WBxbHDL28ciRG7O0uMvYBlGJrx3YChzLdo3duWzzQ-TzYtIa5N7NCYNXc1CqEgK6jGDthYYBRfdVXQNBg
+Accept-Language: UZ
+
+
+
+
